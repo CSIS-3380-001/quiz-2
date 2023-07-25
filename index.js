@@ -15,7 +15,6 @@ const mongoURI = 'mongodb+srv://tempuser:123@cluster0.f9d6o.gcp.mongodb.net/Exam
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log('Connected to MongoDB');
-    insertdOC();
   })
   .catch(err => {
     console.error('Error connecting to MongoDB:', err);
