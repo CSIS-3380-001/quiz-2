@@ -9,7 +9,7 @@ const port = 7000;
 // MongoDB Connection URL
 // const mongoURI = 'mongodb://localhost:27017/Exam';
 // const mongoURI = 'mongodb+srv://root:VRPd3ICLK6juCQCa@cluster0.dg4ocjz.mongodb.net/Exam?retryWrites=true&w=majority';
-const mongoURI = 'mongodb+srv:// tempuser:123@cluster0.f9d6o.gcp.mongodb.net/Exam';
+const mongoURI = 'mongodb+srv://tempuser:123@cluster0.f9d6o.gcp.mongodb.net/Exam';
 
 // Connect to MongoDB
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
