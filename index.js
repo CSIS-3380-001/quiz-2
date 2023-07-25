@@ -36,6 +36,11 @@ mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
 // Middleware to parse incoming JSON data
 app.use(bodyParser.json());
 
+// Root route for GET request
+app.get('/', (req, res) => {
+    res.send('Hello, World!');
+});
+
 // Start the server
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}/`);
